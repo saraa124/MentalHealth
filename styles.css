@@ -1,0 +1,141 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, #e6d9ff, #d0baff); /* Lavender gradient background for the page */
+}
+
+/* Chatbox Container */
+#chatbox {
+    width: 400px;
+    border: 1px solid #d0baff; /* Lavender border */
+    background: #ffffff; /* White background for chatbox */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition for theme changes */
+}
+
+/* Messages */
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #d0baff; /* Lavender border */
+    padding: 15px;
+    background: #f7f7f7; /* Light background for message area */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Soft black for readability */
+}
+
+
+
+textarea {
+    width: calc(100% - 24px);
+    height: 70px;
+    padding: 14px;
+    border: 2px solid #d0baff; /* Lavender border */
+    border-radius: 15px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: none; /* Prevent resizing */
+    transition: border-color 0.3s; /* Smooth transition effect */
+    margin-bottom: 10px; /* Space below the textarea */
+}
+
+
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #9a6fd4; /* Lavender button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+    transform: translateY(2px); /* Slightly offset to enhance 3D effect */
+}
+
+button:hover {
+    background-color: #7a4fbd; /* Darker lavender for hover effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    transform: translateY(0); /* Remove offset on hover */
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for active state */
+    transform: translateY(1px); /* Slightly lower offset when button is pressed */
+}
+
+
+
+/* Theme Selector */
+#theme-selector {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #d0baff; /* Lavender border */
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+/* Avatar Upload */
+#avatar-upload {
+    margin-top: 10px;
+}
+
+/* Lavender Theme */
+.lavender {
+    background: linear-gradient(to bottom, #e6d9ff, #d0baff); /* Lavender gradient background */
+    border-color: #d0baff; /* Lavender border */
+}
+
+/* Name Section */
+#name-section {
+    margin-top: 20px; /* Adds space above the name section */
+}
+
+
+
+/* Name Input Box */
+#name-input {
+    width: calc(100% - 24px); /* Full width minus padding */
+    padding: 12px;
+    border: 2px solid #d0baff; /* Lavender border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px;
+    color: #333; /* Text color */
+    background-color: #f9f9f9; /* Light background */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    transition: all 0.3s; /* Smooth transition for focus effect */
+    margin-bottom: 10px; /* Space below the input box */
+}
+#name-input:focus {
+    border-color: #9a6fd4; /* Lavender border on focus */
+    background-color: #ffffff; /* White background on focus */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Outer shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+
+.ai-message {
+    color: #9370DB;
+}
+
+.user-message {
+    color: black; /* Adjust as needed */
+}
